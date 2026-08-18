@@ -1,0 +1,57 @@
+/* Add this snippet at the top of style.css */
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffe6e8;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+}
+
+.heart {
+  font-size: 50px;
+  animation: pulse 1s infinite alternate;
+  -webkit-animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.2); }
+}
+
+#timer {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d63384;
+  margin: 20px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  background-color: #d63384;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b02a6b;
+}

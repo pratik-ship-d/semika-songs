@@ -1,0 +1,93 @@
+/* Add this snippet at the top of style.css */
+* {
+  box-sizing: border-box;
+}
+/* Page Background & Font */
+body {
+  background: linear-gradient(135deg, #ffd1dc 0%, #ffe3e8 50%, #d8b4e2 100%);
+  font-family: 'Fredoka', cursive, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Main Outer Container Card */
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  padding: 30px 25px;
+  box-shadow: 0 10px 25px rgba(214, 51, 132, 0.15);
+  border: 3px solid #ffb6c1;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Main Title */
+.main-title {
+  color: #ff4d6d;
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+/* Individual Song Card Boxes */
+.song-box {
+  background: #fff0f3;
+  border: 2px solid #ffccd5;
+  border-radius: 18px;
+  padding: 14px;
+  margin-bottom: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.song-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255, 77, 109, 0.15);
+}
+
+/* Highlight the last favorite box with soft gold border */
+.song-box.Highlight {
+  background: #fff8e7;
+  border: 2px solid #fce38a;
+}
+
+/* Song Title Text */
+.song-title {
+  color: #590d22;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+/* Audio Player Custom Colors & Curved Edges */
+audio {
+  width: 100%;
+  border-radius: 20px;
+  outline: none;
+  filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.08));
+}
+
+/* Cute Back Button */
+.back-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #ff4d6d;
+  background-color: #ffe6ea;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1.5px solid #ffb6c1;
+  transition: all 0.2s ease;
+}
+
+.back-link:hover {
+  background-color: #ff4d6d;
+  color: #ffffff;
+}
