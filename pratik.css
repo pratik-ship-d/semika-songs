@@ -1,0 +1,101 @@
+/* Box Sizing Reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Background & Body Setup */
+body {
+  background: linear-gradient(135deg, #d8b4e2 0%, #ffe3e8 50%, #ffd1dc 100%);
+  font-family: 'Fredoka', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Main Outer Container */
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  padding: 30px 25px;
+  box-shadow: 0 10px 25px rgba(186, 104, 200, 0.2);
+  border: 3px solid #e1bee7;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Main Title */
+.main-title {
+  color: #7b1fa2;
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Individual Song Container */
+.song-box {
+  background: #f3e5f5;
+  border: 2px solid #e1bee7;
+  border-radius: 18px;
+  padding: 14px;
+  margin-bottom: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.song-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(123, 31, 162, 0.15);
+}
+
+/* Highlight Box for Dedicated Song */
+.song-box.Highlight {
+  background: #fff8e7;
+  border: 2px solid #ffe082;
+}
+
+/* Song Title Text */
+.song-title {
+  color: #4a148c;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+/* Audio Player */
+audio {
+  width: 100%;
+  border-radius: 20px;
+  outline: none;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.08));
+}
+
+/* Navigation Buttons Container */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Back Link Styling */
+.back-link {
+  display: inline-block;
+  color: #7b1fa2;
+  background-color: #f3e5f5;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: 1.5px solid #e1bee7;
+  transition: all 0.2s ease;
+}
+
+.back-link:hover {
+  background-color: #7b1fa2;
+  color: #ffffff;
+}

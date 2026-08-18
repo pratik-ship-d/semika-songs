@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Songs For You 🎸💖</title>
+  
+  <!-- Cute Google Font: Fredoka -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Linking your existing stylesheet -->
+  <link rel="stylesheet" href="pratik.css">
+</head>
+<body>
+
+  <div class="card">
+    <h1 class="main-title">Songs I Sang For You 🎸✨</h1>
+
+    <div class="song-list">
+      
+      <div class="song-box">
+        <p class="song-title">🎤 All i dream of is your eyes 🎶</p>
+        <audio controls>
+          <source src="./pj/eyes.mp4" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <div class="song-box">
+        <p class="song-title">🎸 Gonna make it a reality 🎵</p>
+        <audio controls>
+          <source src="./pj/janam.mp4" type="audio/mpeg">
+        </audio>
+      </div>
+      <div class="song-box">
+        <p class="song-title">🎸You won't understand fs  🎵</p>
+        <audio controls>
+          <source src="./pj/saudebaazi.mp4"type="audio/mpeg">
+        </audio>
+      </div>
+
+      <div class="song-box Highlight">
+        <p class="song-title">💖 Dedicated Specially To You 💖</p>
+        <audio controls>
+          <source src="./pj/sason.mp4" type="audio/mpeg">
+        </audio>
+      </div>
+<div class="song-box">
+        <p class="song-title">🎸Chichako  🎵</p>
+        <audio controls>
+          <source src="./pj/chichako.mp4"type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+      <a href="music.html" class="back-link">👈 Her Songs</a>
+      <a href="index.html" class="back-link">⏳ Countdown</a>
+    </div>
+  </div>
+
+  <!-- Script to pause other tracks when one plays -->
+  <script>
+    const allAudios = document.querySelectorAll("audio");
+    allAudios.forEach(function(audio) {
+      audio.addEventListener("play", function() {
+        allAudios.forEach(function(otherAudio) {
+          if (otherAudio !== audio) {
+            otherAudio.pause();
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
